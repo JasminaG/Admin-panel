@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin Panel</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div id="myForm">
+		<h1 class="h1">Logirajte se</h1>
+
+		<form  action="script.js">
+			<fieldset style="border-color: purple;
+	border-style: all;">
+			<legend style="color: purple">Licni podaci:</legend><br>	
+				Username:<br>
+			  	<input id="name" type="text" name="username" style="background-color: #862d59 color:white">
+			  	<br><br>
+			  	Šifra:<br><br>
+			  	<input id="password" type="password" name="psw" style="background-color: #862d59 color:white">
+			  	<br>
+			  	<br><br><br><br><br>
+			  	<input type="button" onclick="return results(event);" value="Submit" style="background-color: #862d59 color:white">
+			  	<input type="reset"> 
+		  </fieldset>
+		</form>
+		<p id="pog" ></p>
+		</div>
+		<div class="rez" id="rez">
+			
+			
+			 <div class="proizvodi">
+			 	<h1>Proizvod</h1>
+			 	<p>Fotografija</p>
+			 	<img src="slike/slika1.jpeg" id="slikica">
+			 </div>
+			 <div class="zaNav">
+				 <ul>
+				 <li><a class="active" href="#home"><p id="results" ></p></a></li>
+				  <li><a href="#home"><button onclick="funkcija1()">Ukloni fotografiju</button></a></li>
+				  <li><a href="#news"><button onclick="funkcija2()">Smanji fotografiju</button></a></li>
+				  <li><a href="#about"><button onclick="funkcija3()">Povecaj fotografiju</button></a></li>
+				  <li><a href="#contact"><button onclick="funkcija4()">Zamijeni fotografiju drugom</button></a></li>
+				</ul>
+			 </div>
+		</div>
+	</body>
+</html>
